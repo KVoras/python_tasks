@@ -9,3 +9,9 @@ audi = {
   "year": 2005,
   "color": 'white',
 }
+
+def show_object_values(obj):
+  values = list(obj.values())
+  print(values)
+
+show_object_values(audi)

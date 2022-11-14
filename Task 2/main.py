@@ -19,3 +19,18 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30 },
   { "id": '9', "name": 'Daniel Cane', "age": 51 },
 ]
+
+def get_user_average_age(users):
+  average_age = round(sum(i.get('age', 0) for i in users) / len(users), 2)
+  print(average_age)
+
+get_user_average_age(users)
+
+def get_user_names(users):
+  user_names = []
+  for user in users:
+    user_names.append(user['name'])
+  user_names.sort()
+  print(user_names)
+
+get_user_names(users)

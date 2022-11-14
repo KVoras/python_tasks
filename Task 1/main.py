@@ -19,3 +19,14 @@ users = [
 ]
 
 
+def filter_dog_owners(users):
+  dog_owners = [user for user in users if user['hasDog']==True]
+  print(dog_owners)
+
+filter_dog_owners(users)
+
+def filter_adults(users):
+  adults = [user for user in users if user['age']>=18]
+  print(adults)
+
+filter_dog_owners(users)
